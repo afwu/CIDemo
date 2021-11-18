@@ -19,9 +19,9 @@
         <th scope="col">URL</th>
         <th scope="col">参数</th>
         <th scope="col">详情</th>
-        <!--        <span class="badge badge-danger">高危</span>-->
-        <!--        <span class="badge badge-warning">中危</span>-->
-        <!--        <span class="badge badge-success">低危</span>-->
+<!--        <span class="badge badge-danger">高危</span>-->
+<!--        <span class="badge badge-warning">中危</span>-->
+<!--        <span class="badge badge-success">低危</span>-->
     </tr>
     </thead>
     <tbody>
@@ -56,6 +56,30 @@
         <td>/ssrf/test4</td>
         <td>url</td>
         <td>使用OkHttp3请求</td>
+    </tr>
+    <tr>
+        <th scope="row">05</th>
+        <td>反射XSS</td>
+        <td><span class="badge badge-success">低危</span></td>
+        <td>/xss/reflection</td>
+        <td>data</td>
+        <td>简单的反射XSS</td>
+    </tr>
+    <tr>
+        <th scope="row">06</th>
+        <td>存储XSS</td>
+        <td><span class="badge badge-danger">高危</span></td>
+        <td>/xss/insert</td>
+        <td>data</td>
+        <td>存储XSS插入数据</td>
+    </tr>
+    <tr>
+        <th scope="row">07</th>
+        <td>存储XSS</td>
+        <td><span class="badge badge-danger">高危</span></td>
+        <td>/xss/get</td>
+        <td>id</td>
+        <td>查询触发存储XSS</td>
     </tr>
     </tbody>
 </table>
