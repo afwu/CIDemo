@@ -19,9 +19,9 @@
         <th scope="col">URL</th>
         <th scope="col">参数</th>
         <th scope="col">详情</th>
-<!--        <span class="badge badge-danger">高危</span>-->
-<!--        <span class="badge badge-warning">中危</span>-->
-<!--        <span class="badge badge-success">低危</span>-->
+        <!--        <span class="badge badge-danger">高危</span>-->
+        <!--        <span class="badge badge-warning">中危</span>-->
+        <!--        <span class="badge badge-success">低危</span>-->
     </tr>
     </thead>
     <tbody>
@@ -80,6 +80,22 @@
         <td>/xss/get</td>
         <td>id</td>
         <td>查询触发存储XSS</td>
+    </tr>
+    <tr>
+        <th scope="row">08</th>
+        <td>SQL注入</td>
+        <td><span class="badge badge-danger">高危</span></td>
+        <td>/sqli/add</td>
+        <td>name&age</td>
+        <td>新增数据</td>
+    </tr>
+    <tr>
+        <th scope="row">09</th>
+        <td>SQL注入</td>
+        <td><span class="badge badge-danger">高危</span></td>
+        <td>/sqli/select</td>
+        <td>name</td>
+        <td>SQL注入触发点</td>
     </tr>
     </tbody>
 </table>
