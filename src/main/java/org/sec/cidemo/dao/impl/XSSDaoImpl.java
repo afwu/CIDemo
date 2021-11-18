@@ -19,7 +19,7 @@ public class XSSDaoImpl implements XSSDao {
 
     @Override
     public Message get(int id) {
-        List<Message> message = jdbcTemplate.query("select * from message where id = ?",
+        List<Message> message = jdbcTemplate.query("select * from t_message where id = ?",
                 new BeanPropertyRowMapper(Message.class), id);
         if (message.size() < 1) {
             return null;
@@ -30,7 +30,8 @@ public class XSSDaoImpl implements XSSDao {
 
     @Override
     public String insert(String data) {
-        int result = jdbcTemplate.update("insert into message (data) values (?)", data);
+        String sql = "insert into t_message (data) values (\"" + data + "\")";
+        int result = jdbcTemplate.update(sql);
         if (result > 0) {
             return "success";
         } else {
