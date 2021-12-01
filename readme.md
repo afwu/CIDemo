@@ -1,5 +1,7 @@
 # CIDemo
 
+请使用：`Windows 10`和`JDK8`，在`Mac`和`Linux`下可能报错
+
 Q:这是什么？
 
 A:为了配合`CodeInspector`自动化代码审计工具而编写的靶机
